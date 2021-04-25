@@ -46,6 +46,8 @@ Esta función convertirá un elemento de un álgebra libre en un polinomio en fo
             [ 1, 1, -1, -1, 1, -1, 1, -1 ] ] ]
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`GP2NP.g`
+
 GP2NPList
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -78,6 +80,8 @@ Esta función tiene el mismo efecto que ``List( Lgp, GBNP )``.
     gap> List(Lgp,GP2NP) = GP2NPList(Lgp);
     true
     gap>
+
+- Se puede descargar el código fuente del ejemplo: :download:`GP2NPList.g`
 
 NP2GP
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -120,6 +124,8 @@ Esta función convertirá un polinomio en formato ``NP`` a un polinomio **GAP** 
     [ [ <zero> of ..., (Z(3))*a+(Z(3)^0)*a^2 ], [ (Z(3)^0)*b^2, (Z(3))*a ] ]
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`NP2GP.g`
+
 NP2GPList
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -159,6 +165,10 @@ Esta función convertirá la lista ``Lnp`` de polinomios en formato ``NP`` en un
     gap>
 
 
+- Se puede descargar el código fuente del ejemplo: :download:`NP2GPList.g`
+
+
+
 Imprimiendo Polinomios en formato NP
 ---------------------------------------
 
@@ -185,6 +195,7 @@ Esta función imprime un polinomio ``np`` en formato ``NP`` configurado por la f
      a^2b - 2ab^2 + 3
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`PrintNP.g`
 
 GBNP.ConfigPrint
 ~~~~~~~~~~~~~~~~~~~~~
@@ -248,6 +259,8 @@ Por defecto, los generadores del álgebra se imprimen como ``a``, . . ., ``l`` y
      ab^2 - 1
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`GBNP.ConfigPrint.g`
+
 PrintNPList
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -279,6 +292,8 @@ Esta función imprime una lista ``Lnp`` de polinomios en formato ``NP``, utiliza
      ab^2 - 1
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`PrintNPList.g`
+
 Calcular polinomios en formato NP
 ------------------------------------------------------
 
@@ -304,6 +319,8 @@ Cuando se llama con un polinomio ``NP`` ``np``, esta función devuelve el númer
     4
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`NumAlgGensNP.g`
+
 NumAlgGensNPList
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -328,9 +345,10 @@ Cuando se llama con una lista de polinomios ``NP`` ``Lnp``, esta función devuel
     4
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`NumAlgGensNPList.g`
+
 NumModGensNP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 La función ``NumModGensNP( npm )`` devuelve el número mínimo ``mt`` para que ``npm`` pertenezca al módulo gratuito en los generadores ``mt``.
 
@@ -351,6 +369,7 @@ Cuando se llama con un polinomio ``npm`` en formato ``NPM``, esta función devue
     2
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`NumModGensNP.g`
 
 NumModGensNPList
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -375,6 +394,8 @@ Cuando se llama con una lista de polinomios ``Lnpm`` en formato ``NPM``, esta fu
     3
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`NumModGensNPList.g`
+
 AddNP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -397,6 +418,8 @@ Calcula ``c ∗ u + d ∗ v`` donde ``u`` y ``v`` son polinomios en formato ``NP
     gap> PrintNP( AddNP( p1, p2, 1, -1 ) );
      - ab^2 + a^2b + 1
     gap>
+
+- Se puede descargar el código fuente del ejemplo: :download:`AddNP.g`
 
 BimulNP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -422,6 +445,8 @@ Cuando se llama con un polinomio ``np`` y dos monomios ``ga``, ``dr``, la funci�
     gap> PrintNP( BimulNP( [ 1 ], p2, [ ] ) );
      a^2b^2 - 4a
     gap>
+
+- Se puede descargar el código fuente del ejemplo: :download:`BimulNP.g`
 
 CleanNP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -456,6 +481,7 @@ Dado un polinomio en formato ``NP``, esta función recopila términos con el mis
     [ [ [ 1, 1, 2 ] ], [ Z(2)^0 ] ]
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`CleanNP.g`
 
 GtNP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -483,6 +509,7 @@ El ordenamiento se realiza por titulación y luego lexicográficamente.
     false
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`GtNP.g`
 
 LtNP
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -508,6 +535,7 @@ Función menor que para ``NP`` monomios, prueba si :math:`u < v`. El ordenamient
     true
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`LtNP.g`
 
 LMonsNP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -537,6 +565,7 @@ Esta función devuelve los principales monomios de una lista ``Lnp`` de polinomi
      ab^2
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`LMonsNP.g`
 
 MkMonicNP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -562,6 +591,8 @@ Esta función devuelve el múltiplo escalar de un polinomio ``np`` en formato ``
     gap> PrintNP( MkMonicNP( p ) );
      a^2b - 1/2
     gap>
+
+- Se puede descargar el código fuente del ejemplo: :download:`MkMonicNP.g`
 
 MulNP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -591,6 +622,7 @@ Cuando se invoca con dos polinomios ``np1`` y ``np2`` en formato ``NP``, esta fu
      - ab^2a^2b + a^2bab^2
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`MulNP.g`
 
 Funciones Gröbner, variante estándar
 ------------------------------------------------------
@@ -649,6 +681,7 @@ Mediante el uso del argumento opcional ``D``, es posible reanudar un cálculo pr
      a^3 + Z(2)^0
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`Grobner.g`
 
 SGrobner
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -698,6 +731,7 @@ Mediante el uso del argumento opcional ``D``, es posible reanudar un cálculo pr
      a^3 - 1
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`SGrobner.g`
 
 IsGrobnerBasis
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -728,6 +762,7 @@ Los polinomios que representan cero están permitidos en ``G``.
     true
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`IsGrobnerBasis.g`
 
 IsStrongGrobnerBasis
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -770,6 +805,7 @@ Los polinomios que representan cero están permitidos en ``G``.
     false
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`IsStrongGrobnerBasis.g`
 
 IsGrobnerPair
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -805,14 +841,14 @@ En lugar de esto, solo se realizan algunos cálculos simples para ver si se pued
     true
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`IsGrobnerPair.g`
+
 MakeGrobnerPair
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 La función ``MakeGrobnerPair( G, D )`` devuelve un registro que contiene un nuevo **par de Gröbner**.
 
 Cuando se llama con un par de argumentos ``G``, ``D``, esta función limpia ``G`` y ``D`` y agrega algunas obstrucciones a ``D`` hasta que se puede demostrar fácilmente que ``D`` es un conjunto básico para ``G`` (ver ``[2]``). El resultado es un registro que contiene los campos ``G`` y todo que representan el **par de Gröbner**.
-
-
 
 .. code-block:: gap
     :caption: Ejemplo-MakeGrobnerPair
@@ -840,6 +876,7 @@ Cuando se llama con un par de argumentos ``G``, ``D``, esta función limpia ``G`
      a^3 - 1
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`MakeGrobnerPair.g`
 
 Álgebras de cocientes de dimensión finita
 ------------------------------------------------------
@@ -894,6 +931,8 @@ Cuando se llama con una **base de Gröbner** ``G``, el número ``t`` de generado
      b^3
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`BaseQA.g`
+
 DimQA
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -926,6 +965,7 @@ Para comprobar si la dimensión del álgebra del cociente es finita y determinar
     3
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`DimQA.g`
 
 MatrixQA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -981,6 +1021,7 @@ Dada una base ``B`` del álgebra del cociente, una **base de Gröbner** (registr
       [  1,  0 ] ]
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`MatrixQA.g`
 
 MatricesQA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1028,6 +1069,8 @@ Dada una base ``B`` del álgebra del cociente, una **base de Gröbner** (registr
     true
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`MatricesQA.g`
+
 MulQA
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1062,6 +1105,7 @@ Cuando se llama con dos polinomios en forma ``NP``, ``p1`` y ``p2``, y una base 
     true
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`MulQA.g`
 
 StrongNormalFormNP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1071,7 +1115,6 @@ La función ``StrongNormalFormNP( f, G )`` devuelve la forma normal fuerte de un
 Cuando se invoca con un polinomio en formato NP (ver ``Sección 2.1``) y un conjunto finito ``G`` de polinomios en formato ``NP``, esta función devolverá una forma normal fuerte (es decir, un polinomio que es igual af módulo ``G``, cada monomio del cual es un múltiplo de ningún monomio principal de un elemento de ``G``).
 
 Tenga en cuenta que ``StrongNormalForm`` con respecto a una **base de Gröbner** se determina de forma única, pero que para una entrada arbitraria ``G``, el resultado puede depender del orden en el que se implementan los pasos de reducción individuales.
-
 
 .. code-block:: gap
     :caption: Ejemplo-StrongNormalFormNP
@@ -1090,9 +1133,10 @@ Tenga en cuenta que ``StrongNormalForm`` con respecto a una **base de Gröbner**
      - ba + a + 3
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`StrongNormalFormNP.g`
+
 Finitud y series de Hilbert
 ------------------------------------------------------
-
 
 DetermineGrowthQA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1156,6 +1200,7 @@ Esto se puede hacer con la función ``PreprocessAnalysisQA (3.6.4)``.
     0
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`DetermineGrowthQA.g`
 
 FinCheckQA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1189,7 +1234,7 @@ La función ``FinCheckQA`` permite el preprocesamiento con la función ``Preproc
     true
     gap>
 
-S
+- Se puede descargar el código fuente del ejemplo: :download:`FinCheckQA.g`
 
 HilbertSeriesQA
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1220,6 +1265,7 @@ Internamente, construye (parte de) el gráfico de palabras estándar. Esta funci
     gap> # DetermineGrowthQA se puede utilizar para comprobar esto.
     gap> # restablecer la impresión; nota que no está dentro de una parte GAPDoc aquí
 
+- Se puede descargar el código fuente del ejemplo: :download:`HilbertSeriesQA.g`
 
 PreprocessAnalysisQA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1259,13 +1305,13 @@ Este preprocesamiento de la lista Lm de monomios se puede aplicar al conjunto de
     [ [ 1 ], [ 2 ] ]
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`PreprocessAnalysisQA.g`
 
 Funciones de la variante de seguimiento
 ------------------------------------------------------
 
-
 EvalTrace
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 La función ``EvalTrace( p, Lnp )`` devuelve la traza evaluada a un polinomio en formato ``NP``.
 
@@ -1292,6 +1338,7 @@ Para un polinomio trazado ``p`` y una lista ``Lnp`` de polinomios en formato ``N
     true
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`EvalTrace.g`
 
 PrintTraceList
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1319,6 +1366,7 @@ Cuando se invoca con una lista ``G`` de polinomios trazados, esta función impri
      G(1)ba^2 + bG(1)ba + G(2) - a^2G(2)a - ba^2G(2)
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`PrintTraceList.g`
 
 PrintTracePol
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1348,6 +1396,7 @@ Esta función imprime la traza de ``p`` un polinomio NP .
     
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`PrintTracePol.g`
 
 PrintNPListTrace
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1374,6 +1423,7 @@ Cuando se invoca con un conjunto de polinomios no conmutativos trazados ``G``, e
      a^3 - 1
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`PrintNPListTrace.g`
 
 SGrobnerTrace
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1401,6 +1451,7 @@ Los resultados serán trazables. Las funciones que pueden imprimir la **base de 
           trace := [ [ [ 2 ], 1, [ 2, 1 ], 1 ], [ [  ], 1, [ 2, 1, 1 ], 1 ], [ [  ], 2, [  ], 1 ],
               [ [ 2, 1, 1 ], 2, [  ], -1 ], [ [ 1, 1 ], 2, [ 1 ], -1 ] ] ) ]
 
+- Se puede descargar el código fuente del ejemplo: :download:`SGrobnerTrace.g`
 
 StrongNormalFormTraceDiff
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1432,6 +1483,7 @@ Tenga en cuenta que la diferencia de los polinomios ``np`` y ``d.pol`` es la mis
      G(1)ba^2 + bG(1)ba + G(1)ba^5 + bG(1)ba^4 + G(2) + G(2)a^3 - a^2G(2)a - ba^2G(2) - a^2G(2)a^4 - ba^2G(2)a^3
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`StrongNormalFormTraceDiff.g`
 
 Funciones de la variante truncada
 ------------------------------------------------------
@@ -1471,6 +1523,8 @@ Estas funciones deben invocarse con una lista ``Lnp`` de polinomios en formato `
      ab^2a - a^2b^2
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`SGrobnerTrunc.g`
+
 CheckHomogeneousNPs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1497,6 +1551,7 @@ Cuando se invoca con una lista ``Lnp`` de polinomios ``NP``  y un vector de peso
     [ 10, 6 ]
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`CheckHomogeneousNPs.g`
 
 BaseQATrunc
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1566,6 +1621,8 @@ Cuando se invoca con una lista de polinomios ``Lnp``, un número natural ``deg``
      y^6
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`BaseQATrunc.g`
+
 DimsQATrunc
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1591,6 +1648,7 @@ Cuando se invoca con una lista de polinomios Lnp, un número natural ``deg`` y u
     [ 1, 0, 1, 1, 1, 2, 2, 3, 3, 5, 4, 7, 7 ]
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`DimsQATrunc.g`
 
 FreqsQATrunc
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1661,10 +1719,10 @@ La frecuencia de un monomio es la lista de números de ocurrencias de una variab
     
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`FreqsQATrunc.g`
 
 Funciones de la variante del módulo
 ------------------------------------------------------
-
 
 SGrobnerModule
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1698,6 +1756,8 @@ Para obtener una lista ``Lnpm`` de vectores en formato NPM (ver ``Sección 2.1``
      b - 3/2a
      a^3 - 4/3
     gap>
+
+- Se puede descargar el código fuente del ejemplo: :download:`SGrobnerModule.g`
 
 BaseQM
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1758,6 +1818,7 @@ Cuando se llama con un registro de **base de Gröbner** ``GBR`` (consulte la ``S
     [ a , 0]
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`BaseQM.g`
 
 DimQM
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1799,6 +1860,7 @@ Cuando se llama con un registro de base de Gröbner ``GBR ``(ver ``Sección 2.8`
     gap> SetInfoLevel( InfoGBNP, 0 );
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`BaseQM.g`
 
 MulQM
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1851,6 +1913,8 @@ Cuando se llama con tres argumentos,
     [ 5 , 0]
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`MulQM.g`
+
 StrongNormalFormNPM
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1902,3 +1966,4 @@ Esta función asume que ``GBR.p`` y ``GBR.ts`` están ordenados (con el orden ``
     [ 1 , 0]
     gap>
 
+- Se puede descargar el código fuente del ejemplo: :download:`StrongNormalFormNPM.g`
