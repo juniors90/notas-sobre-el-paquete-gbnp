@@ -1,0 +1,400 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>1. Descripción &mdash; documentación de Notas sobre la documentación del paquete GBNP - 0.0.1</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="2. Funciones" href="03-funciones.html" />
+    <link rel="prev" title="Notas sobre la documentación del paquete GBNP!" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: green" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Notas sobre la documentación del paquete GBNP
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Descripción</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#polinomios-no-conmutativos-nps">1.1. Polinomios no conmutativos (NPs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#polynomios-no-conmutativos-para-modulos-npms">1.2. Polynomios No Conmutativos para Modulos (NPMs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#functiones-principales">1.3. Functiones Principales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sobre-la-implementacion">1.4. Sobre la implementación</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variante-de-rastreo">1.5. Variante de rastreo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variante-de-truncamiento">1.6. Variante de truncamiento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variante-de-modulo">1.7. Variante de módulo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#registros-de-bases-de-grobner">1.8. Registros de bases de Gröbner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#algebras-cocientes">1.9. Algebras Cocientes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="03-funciones.html">2. Funciones</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Notas sobre la documentación del paquete GBNP</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">1. </span>Descripción</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/GBNP/02-description.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="descripcion">
+<h1><span class="section-number">1. </span>Descripción<a class="headerlink" href="#descripcion" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Recordemos inicializar GAP de la siguiente manera:</p>
+<div class="highlight-gap notranslate"><div class="highlight"><pre><span></span>┌───────┐   <span class="nv">GAP</span> <span class="nv">4</span><span class="o">.</span><span class="nv">10</span><span class="o">.</span><span class="nv">2</span> <span class="nv">of</span> <span class="nv">19</span><span class="o">-</span><span class="nv">Jun</span><span class="o">-</span><span class="nv">2019</span>
+│  <span class="nv">GAP</span>  │   <span class="nv">https</span>:<span class="o">//</span><span class="nv">www</span><span class="o">.</span><span class="nv">gap</span><span class="o">-</span><span class="nv">system</span><span class="o">.</span><span class="nv">org</span>
+└───────┘   <span class="nv">Architecture</span>: <span class="nv">i686</span><span class="o">-</span><span class="nv">pc</span><span class="o">-</span><span class="nv">cygwin</span><span class="o">-</span><span class="nv">default32</span><span class="o">-</span><span class="nv">kv3</span>
+<span class="nv">Configuration</span>:  <span class="nv">gmp</span> <span class="nv">6</span><span class="o">.</span><span class="nv">1</span><span class="o">.</span><span class="nv">2</span><span class="o">,</span> <span class="nv">readline</span>
+<span class="nv">Loading</span> <span class="nv">the</span> <span class="nv">library</span> <span class="ow">and</span> <span class="nv">packages</span> <span class="o">...</span>
+<span class="nv">Packages</span>: <span class="nv">AClib</span> <span class="nv">1</span><span class="o">.</span><span class="nv">3</span><span class="o">.</span><span class="nv">1</span><span class="o">,</span> <span class="nv">Alnuth</span> <span class="nv">3</span><span class="o">.</span><span class="nv">1</span><span class="o">.</span><span class="nv">1</span><span class="o">,</span> <span class="nv">AtlasRep</span> <span class="nv">2</span><span class="o">.</span><span class="nv">1</span><span class="o">.</span><span class="nv">0</span><span class="o">,</span> <span class="nv">AutoDoc</span> <span class="nv">2019</span><span class="o">.</span><span class="nv">05</span><span class="o">.</span><span class="nv">20</span><span class="o">,</span> <span class="nv">AutPGrp</span> <span class="nv">1</span><span class="o">.</span><span class="nv">10</span><span class="o">,</span> <span class="nv">Browse</span> <span class="nv">1</span><span class="o">.</span><span class="nv">8</span><span class="o">.</span><span class="nv">8</span><span class="o">,</span>
+         <span class="nv">CRISP</span> <span class="nv">1</span><span class="o">.</span><span class="nv">4</span><span class="o">.</span><span class="nv">4</span><span class="o">,</span> <span class="nv">Cryst</span> <span class="nv">4</span><span class="o">.</span><span class="nv">1</span><span class="o">.</span><span class="nv">19</span><span class="o">,</span> <span class="nv">CrystCat</span> <span class="nv">1</span><span class="o">.</span><span class="nv">1</span><span class="o">.</span><span class="nv">9</span><span class="o">,</span> <span class="nv">CTblLib</span> <span class="nv">1</span><span class="o">.</span><span class="nv">2</span><span class="o">.</span><span class="nv">2</span><span class="o">,</span> <span class="nv">FactInt</span> <span class="nv">1</span><span class="o">.</span><span class="nv">6</span><span class="o">.</span><span class="nv">2</span><span class="o">,</span> <span class="nv">FGA</span> <span class="nv">1</span><span class="o">.</span><span class="nv">4</span><span class="o">.</span><span class="nv">0</span><span class="o">,</span>
+         <span class="nv">Forms</span> <span class="nv">1</span><span class="o">.</span><span class="nv">2</span><span class="o">.</span><span class="nv">5</span><span class="o">,</span> <span class="nv">GAPDoc</span> <span class="nv">1</span><span class="o">.</span><span class="nv">6</span><span class="o">.</span><span class="nv">2</span><span class="o">,</span> <span class="nv">genss</span> <span class="nv">1</span><span class="o">.</span><span class="nv">6</span><span class="o">.</span><span class="nv">5</span><span class="o">,</span> <span class="nv">IO</span> <span class="nv">4</span><span class="o">.</span><span class="nv">6</span><span class="o">.</span><span class="nv">0</span><span class="o">,</span> <span class="nv">IRREDSOL</span> <span class="nv">1</span><span class="o">.</span><span class="nv">4</span><span class="o">,</span> <span class="nv">LAGUNA</span> <span class="nv">3</span><span class="o">.</span><span class="nv">9</span><span class="o">.</span><span class="nv">3</span><span class="o">,</span> <span class="nv">orb</span> <span class="nv">4</span><span class="o">.</span><span class="nv">8</span><span class="o">.</span><span class="nv">2</span><span class="o">,</span>
+         <span class="nv">Polenta</span> <span class="nv">1</span><span class="o">.</span><span class="nv">3</span><span class="o">.</span><span class="nv">8</span><span class="o">,</span> <span class="nv">Polycyclic</span> <span class="nv">2</span><span class="o">.</span><span class="nv">14</span><span class="o">,</span> <span class="nv">PrimGrp</span> <span class="nv">3</span><span class="o">.</span><span class="nv">3</span><span class="o">.</span><span class="nv">2</span><span class="o">,</span> <span class="nv">RadiRoot</span> <span class="nv">2</span><span class="o">.</span><span class="nv">8</span><span class="o">,</span> <span class="nv">recog</span> <span class="nv">1</span><span class="o">.</span><span class="nv">3</span><span class="o">.</span><span class="nv">2</span><span class="o">,</span> <span class="nv">ResClasses</span> <span class="nv">4</span><span class="o">.</span><span class="nv">7</span><span class="o">.</span><span class="nv">2</span><span class="o">,</span>
+         <span class="nv">SmallGrp</span> <span class="nv">1</span><span class="o">.</span><span class="nv">3</span><span class="o">,</span> <span class="nv">Sophus</span> <span class="nv">1</span><span class="o">.</span><span class="nv">24</span><span class="o">,</span> <span class="nv">SpinSym</span> <span class="nv">1</span><span class="o">.</span><span class="nv">5</span><span class="o">.</span><span class="nv">1</span><span class="o">,</span> <span class="nv">TomLib</span> <span class="nv">1</span><span class="o">.</span><span class="nv">2</span><span class="o">.</span><span class="nv">8</span><span class="o">,</span> <span class="nv">TransGrp</span> <span class="nv">2</span><span class="o">.</span><span class="nv">0</span><span class="o">.</span><span class="nv">4</span><span class="o">,</span> <span class="nv">utils</span> <span class="nv">0</span><span class="o">.</span><span class="nv">63</span>
+<span class="nv">Try</span> &#39;??<span class="nv">help</span>&#39; <span class="k">for</span> <span class="nv">help</span><span class="o">.</span> <span class="nv">See</span> <span class="nv">also</span> &#39;?<span class="nv">copyright</span>&#39;<span class="o">,</span> &#39;?<span class="nv">cite</span>&#39; <span class="ow">and</span> &#39;?<span class="nv">authors</span>&#39;
+<span class="nv">gap</span><span class="o">&gt;</span> <span class="nv">LoadPackage</span><span class="p">(</span> <span class="s">&quot;GBNP&quot;</span> <span class="p">)</span><span class="o">;</span>
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+<span class="nv">Loading</span>  <span class="nv">GBNP</span> <span class="nv">1</span><span class="o">.</span><span class="nv">0</span><span class="o">.</span><span class="nv">3</span> <span class="p">(</span><span class="nv">Non</span><span class="o">-</span><span class="nv">commutative</span> <span class="nv">Gröbner</span> <span class="nv">bases</span><span class="p">)</span>
+<span class="nv">by</span> <span class="nv">A</span><span class="o">.</span><span class="nv">M</span><span class="o">.</span> <span class="nv">Cohen</span> <span class="p">(</span><span class="nv">http</span>:<span class="o">//</span><span class="nv">www</span><span class="o">.</span><span class="nv">win</span><span class="o">.</span><span class="nv">tue</span><span class="o">.</span><span class="nv">nl</span><span class="o">/</span>~<span class="nv">amc</span><span class="p">)</span> <span class="ow">and</span>
+<span class="nv">J</span><span class="o">.</span><span class="nv">W</span><span class="o">.</span> <span class="nv">Knopper</span> <span class="p">(</span><span class="nv">J</span><span class="o">.</span><span class="nv">W</span><span class="o">.</span><span class="nv">Knopper</span>@<span class="nv">tue</span><span class="o">.</span><span class="nv">nl</span><span class="p">)</span><span class="o">.</span>
+<span class="nv">Homepage</span>: <span class="nv">http</span>:<span class="o">//</span><span class="nv">mathdox</span><span class="o">.</span><span class="nv">org</span><span class="o">/</span><span class="nv">products</span><span class="o">/</span><span class="nv">gbnp</span><span class="o">/</span>
+─────────────────────────────────────────────────────────────────────────────────────────────────────
+<span class="no">true</span>
+<span class="nv">gap</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<div class="section" id="polinomios-no-conmutativos-nps">
+<h2><span class="section-number">1.1. </span>Polinomios no conmutativos (NPs)<a class="headerlink" href="#polinomios-no-conmutativos-nps" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El tipo de datos principal del <code class="docutils literal notranslate"><span class="pre">paquete</span> <span class="pre">GBNP</span></code> es una lista de polinomios no conmutativos (NP). El tipo de datos de un polinomio no conmutativo, denominado formato <code class="docutils literal notranslate"><span class="pre">NP</span></code>, es una lista de dos listas:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>La primera lista es una lista <code class="docutils literal notranslate"><span class="pre">m</span></code> de monomios.</p></li>
+<li><p>La segunda lista es una lista <code class="docutils literal notranslate"><span class="pre">c</span></code> de coeficientes de estos monomios.</p></li>
+</ul>
+</div></blockquote>
+<p>Las dos listas tienen la misma longitud. El polinomio representado por el par ordenado <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">m,</span> <span class="pre">c</span> <span class="pre">]</span></code> es</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle\sum_{i}c_im_i.\]</div>
+<p>Un monomio es una lista de números enteros positivos. Se interpretan como los índices de las variables. Entonces, si <code class="docutils literal notranslate"><span class="pre">k</span> <span class="pre">=</span> <span class="pre">[</span> <span class="pre">1,2,3,2,1</span> <span class="pre">]</span></code> y las variables son <code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code>, <code class="docutils literal notranslate"><span class="pre">z</span></code> (en este orden), entonces <code class="docutils literal notranslate"><span class="pre">k</span></code> representa el monomio <code class="docutils literal notranslate"><span class="pre">xyzyx</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>El nombre de las variables no tiene ningún significado. Hay varias formas de imprimirlas, pero la predeterminada es <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, <span class="math notranslate nohighlight">\(c\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> (ver más abajo).</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<ul class="simple">
+<li><p>El polinomio cero o nulo está representado por <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">[</span> <span class="pre">],</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">]</span></code>.</p></li>
+<li><p>El polinomio <span class="math notranslate nohighlight">\(1\)</span> está representado por <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">[</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">],</span> <span class="pre">[</span> <span class="pre">1</span> <span class="pre">]</span> <span class="pre">]</span></code>.</p></li>
+</ul>
+</div>
+<p>Los algoritmos funcionan para el álgebra <span class="math notranslate nohighlight">\(\mathbb{F} \langle\langle x_{1}, x_{2},\dots, x_{t} \rangle\rangle\)</span> de polinomios no conmutativos en <span class="math notranslate nohighlight">\(t\)</span> variables sobre el campo <span class="math notranslate nohighlight">\(\mathbb{F}\)</span>. En consecuencia, la lista <code class="docutils literal notranslate"><span class="pre">c</span></code> debe contener elementos de <span class="math notranslate nohighlight">\(\mathbb{F}\)</span>. No siempre es fácil recuperar <span class="math notranslate nohighlight">\(\mathbb{F}\)</span> de la lista <code class="docutils literal notranslate"><span class="pre">C</span></code>. Las funciones <code class="docutils literal notranslate"><span class="pre">One</span></code> y <code class="docutils literal notranslate"><span class="pre">Zero</span></code> de <strong>GAP</strong> pueden ser de alguna ayuda.</p>
+<p>Para facilitar la visualización de los polinomios, proporcionamos la función <code class="docutils literal notranslate"><span class="pre">PrintNP</span></code>. Por ejemplo</p>
+<div class="literal-block-wrapper docutils container" id="funcion-printnp">
+<div class="code-block-caption"><span class="caption-text">función PrintNP</span><a class="headerlink" href="#funcion-printnp" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-gap notranslate"><div class="highlight"><pre><span></span><span class="nv">gap</span><span class="o">&gt;</span> <span class="nv">PrintNP</span><span class="p">([</span> <span class="p">[[</span><span class="nv">1</span><span class="o">,</span><span class="nv">2</span><span class="p">]</span><span class="o">,</span><span class="p">[</span><span class="nv">2</span><span class="o">,</span><span class="nv">1</span><span class="p">]]</span><span class="o">,</span><span class="p">[</span><span class="nv">3</span><span class="o">,-</span><span class="nv">1</span><span class="p">]</span> <span class="p">])</span><span class="o">;</span>
+<span class="nv">3ab</span> <span class="o">-</span> <span class="nv">ba</span>
+</pre></div>
+</div>
+</div>
+<p>De hecho, tenemos los nombres: <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, <span class="math notranslate nohighlight">\(c\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span> para <span class="math notranslate nohighlight">\(x_1\)</span>, <span class="math notranslate nohighlight">\(x_2\)</span>, <span class="math notranslate nohighlight">\(x_3\)</span>, <span class="math notranslate nohighlight">\(\dots\)</span>, excepto que todo lo que está más allá de <code class="docutils literal notranslate"><span class="pre">l</span></code> (la <code class="docutils literal notranslate"><span class="pre">12ª</span></code> letra) se llama <span class="math notranslate nohighlight">\(x\)</span>. Esto se puede cambiar fácilmente llamando a la función <code class="docutils literal notranslate"><span class="pre">GBNP.ConfigPrint</span></code>, que se puede encontrar en la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">3.2</span></code> (<strong>cambiar el número de esta sección</strong>).</p>
+<p>La función <code class="docutils literal notranslate"><span class="pre">PrintNPList</span></code> está disponible para imprimir una lista de <code class="docutils literal notranslate"><span class="pre">NP</span></code> (= polinomios no conmutativos).</p>
+<p>Para facilitar la prueba de si dos estructuras de datos representan el mismo <code class="docutils literal notranslate"><span class="pre">NP</span></code>, usamos la convención de que los polinomios son «limpios». Esto significa que parece que son una salida de la función <code class="docutils literal notranslate"><span class="pre">CleanNP</span></code>. En otras palabras:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>cada monomio aparece como máximo una vez en la lista de monomios,</p></li>
+<li><p>no se producen monomios cuyos coeficientes sean cero,</p></li>
+<li><p>Los monomios están ordenados (primero el grado total, luego lexicográficamente) de mayor a menor.</p></li>
+</ul>
+</div></blockquote>
+<p>Una ventaja del ordenamiento es que el monomio principal de un <code class="docutils literal notranslate"><span class="pre">NP</span></code>, <code class="docutils literal notranslate"><span class="pre">p</span></code> es solo <code class="docutils literal notranslate"><span class="pre">p[1][1]</span></code> y su coeficiente principal es <code class="docutils literal notranslate"><span class="pre">p[2][1]</span></code>. Los usuarios que quieran trabajar con otros pedidos pueden utilizar las funciones definidas en la extensión <code class="docutils literal notranslate"><span class="pre">NMO</span></code> <a class="reference external" href="http://www.mathdox.org/grobner/nmo/manual.pdf">[aquí]</a> de <code class="docutils literal notranslate"><span class="pre">GBNP</span></code>.</p>
+</div>
+<div class="section" id="polynomios-no-conmutativos-para-modulos-npms">
+<h2><span class="section-number">1.2. </span>Polynomios No Conmutativos para Modulos (NPMs)<a class="headerlink" href="#polynomios-no-conmutativos-para-modulos-npms" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">2.1</span></code> se describe el formato NP para elementos de un álgebra libre <span class="math notranslate nohighlight">\(A\)</span> de polinomios no conmutativos en un número fijo de variables. Este formato se puede ajustar ligeramente para permitir el uso de un módulo de derecho libre <span class="math notranslate nohighlight">\(A^{n}\)</span> de rango finito <span class="math notranslate nohighlight">\(n\)</span> sobre <span class="math notranslate nohighlight">\(A\)</span>. El formato interno de un elemento del módulo es similar al de un polinomio no conmutativo. El único cambio es que cada monomio comenzará con un número negativo. El valor absoluto de este número es el índice del vector base estándar del módulo libre.</p>
+<p>Por ejemplo, en el módulo libre <span class="math notranslate nohighlight">\(\mathbb{F} \langle\langle x_{1}, x_{2},\dots, x_{t} \rangle\rangle\)</span> de rango <span class="math notranslate nohighlight">\(3\)</span>, la expresión <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">[</span> <span class="pre">[</span> <span class="pre">-1</span> <span class="pre">]</span> <span class="pre">],</span> <span class="pre">[</span> <span class="pre">1</span> <span class="pre">]</span> <span class="pre">]</span></code> representa <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">0,</span> <span class="pre">0]</span></code> y <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">[</span> <span class="pre">[-1,</span> <span class="pre">1,</span> <span class="pre">2</span> <span class="pre">],</span> <span class="pre">[</span> <span class="pre">-1,</span> <span class="pre">2,</span> <span class="pre">1</span> <span class="pre">],</span> <span class="pre">[</span> <span class="pre">-</span> <span class="pre">3,</span> <span class="pre">2,</span> <span class="pre">2,</span> <span class="pre">2</span> <span class="pre">]</span> <span class="pre">],</span> <span class="pre">[</span> <span class="pre">6,</span> <span class="pre">-7,</span> <span class="pre">9</span> <span class="pre">]</span> <span class="pre">]</span></code> representa <code class="docutils literal notranslate"><span class="pre">[</span></code> <span class="math notranslate nohighlight">\(6x_{1}x_{2} - 7x_{2}x_{1}\)</span> <code class="docutils literal notranslate"><span class="pre">,</span></code> <span class="math notranslate nohighlight">\(0\)</span> <code class="docutils literal notranslate"><span class="pre">,</span></code> <span class="math notranslate nohighlight">\(9x_{2}^{3}\)</span> <code class="docutils literal notranslate"><span class="pre">]</span></code>. El vector cero se representa de la misma manera que su contraparte en formato <code class="docutils literal notranslate"><span class="pre">NP</span></code> en la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">2.1</span></code> y es el único sin una entrada negativa: <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">[</span> <span class="pre">],</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">]</span></code>. Nos referimos a este formato como formato <code class="docutils literal notranslate"><span class="pre">NPM</span></code>.</p>
+<p>Los elementos de los módulos se imprimen como vectores. Consulte la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">3.9</span></code> sobre cómo utilizar los módulos. También se recomiendan los ejemplos <code class="docutils literal notranslate"><span class="pre">A.19,</span></code> <code class="docutils literal notranslate"><span class="pre">A.21</span></code> y <code class="docutils literal notranslate"><span class="pre">A.20</span></code>.</p>
+</div>
+<div class="section" id="functiones-principales">
+<h2><span class="section-number">1.3. </span>Functiones Principales<a class="headerlink" href="#functiones-principales" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><span class="underline">La función principal</span> es <code class="docutils literal notranslate"><span class="pre">SGrobner</span> <span class="pre">(3.4.2)</span></code> (que es la abreviatura de <code class="docutils literal notranslate"><span class="pre">Strong</span> <span class="pre">Gröbner</span></code>, ya que usamos la <strong>Forma Normal Fuerte</strong>, discutida en la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">StrongNormalFormNPM</span> <span class="pre">(3.9.5)</span></code>, la mayor parte del tiempo). Toma una lista de <code class="docutils literal notranslate"><span class="pre">NP</span></code> en un álgebra libre <span class="math notranslate nohighlight">\(A\)</span> y prepara dos listas para su tratamiento en un ciclo:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Primero la lista en sí, llamada <span class="math notranslate nohighlight">\(G\)</span>. Antes de ingresar al ciclo, <span class="math notranslate nohighlight">\(G\)</span> se limpia, ordena y sus elementos se hacen mónicos, es decir, se multiplican por un escalar para que el coeficiente principal se convierta en uno. El pedido se realiza mediante la comparación de los principales monomios. El orden de los principales monomios es lexicográfico de longitud. Para otros pedidos, se pueden utilizar las funciones de la extensión <code class="docutils literal notranslate"><span class="pre">NMO</span></code>; ver <code class="docutils literal notranslate"><span class="pre">[5]</span></code>.</p></li>
+<li><p>En segundo lugar, la lista de todas las formas normales con respecto a <span class="math notranslate nohighlight">\(G\)</span> de <span class="math notranslate nohighlight">\(S\)</span>-polinomios de elementos de <span class="math notranslate nohighlight">\(G\)</span>. Esta lista se llama <span class="math notranslate nohighlight">\(D\)</span>. Para una base de Gröbner, los <span class="math notranslate nohighlight">\(S\)</span>-polinomios de polinomios en <span class="math notranslate nohighlight">\(D\)</span> (posiblemente con un elemento de <span class="math notranslate nohighlight">\(G\)</span>) deben ser calculado. Si <span class="math notranslate nohighlight">\(D\)</span> está vacío, <span class="math notranslate nohighlight">\(G\)</span> es una base de Gröbner.</p></li>
+</ul>
+</div></blockquote>
+<p>Luego, la función llama a la rutina <code class="docutils literal notranslate"><span class="pre">GBNP.SGrobnerLoop</span></code> en los argumentos <code class="docutils literal notranslate"><span class="pre">G</span></code>, <code class="docutils literal notranslate"><span class="pre">D</span></code> que se cambian en un intento de modificar <code class="docutils literal notranslate"><span class="pre">G</span></code> conservando las siguientes dos propiedades.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">G</span></code> genera el mismo ideal bilateral <span class="math notranslate nohighlight">\(I\)</span> en <span class="math notranslate nohighlight">\(A\)</span> que antes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">D</span></code> contiene todas las formas normales con respecto a <code class="docutils literal notranslate"><span class="pre">G</span></code> de <span class="math notranslate nohighlight">\(S\)</span>-polinomios de elementos de <code class="docutils literal notranslate"><span class="pre">G</span></code> que necesitan reducirse a cero para que la base sea una <strong>base de Gröbner</strong>.</p></li>
+</ol>
+</div></blockquote>
+<p>La importancia de esta característica es que, en caso de grandes cálculos, el usuario puede almacenar <code class="docutils literal notranslate"><span class="pre">G</span></code> y <code class="docutils literal notranslate"><span class="pre">D</span></code> en casi cualquier momento y reanudar el cálculo recargando <code class="docutils literal notranslate"><span class="pre">G</span></code> y <code class="docutils literal notranslate"><span class="pre">D</span></code> y llamando a la función de bucle <code class="docutils literal notranslate"><span class="pre">GBNP.SGrobnerLoop</span></code> cuando sea conveniente. El único detalle técnico que se debe manejar es que el último elemento de la lista <code class="docutils literal notranslate"><span class="pre">G</span></code> debe copiarse en la lista <code class="docutils literal notranslate"><span class="pre">D</span></code>. El bucle en sí da un paso para hacer que <code class="docutils literal notranslate"><span class="pre">G</span></code> se parezca más a una <strong>base de Gröbner</strong> de <span class="math notranslate nohighlight">\(I\)</span>. Como en el caso conmutativo, el progreso se puede indicar mediante el uso de un orden en el conjunto de monomios principales de los elementos de <code class="docutils literal notranslate"><span class="pre">G</span></code>.</p>
+<p>Sin embargo, a diferencia del caso conmutativo, este ordenamiento no está bien fundado y no hay garantía a priori de que se saldrá del bucle después de un número finito de iteraciones. El ciclo termina cuando la lista <code class="docutils literal notranslate"><span class="pre">D</span></code> está vacía, en cuyo caso el trabajo está esencialmente hecho: después de una limpieza interna y un poco de reescritura adicional, el cálculo termina.</p>
+<p>En muchas de nuestras propias aplicaciones, el módulo de anillo polinomial completo, el ideal de dos lados I generado por <code class="docutils literal notranslate"><span class="pre">G</span></code> es un álgebra de cociente de dimensión finita. En tales casos, uno quisiera saber la dimensión (de donde la función <code class="docutils literal notranslate"><span class="pre">DimQA</span> <span class="pre">(3.5.2)</span></code>, <code class="docutils literal notranslate"><span class="pre">QA</span></code> para álgebra de cocientes), encontrar una base (de donde la función <code class="docutils literal notranslate"><span class="pre">BaseQA</span> <span class="pre">(3.5.1))</span></code>, o simplemente los monomios hasta un cierto grado que no son divisibles por un término principal de <code class="docutils literal notranslate"><span class="pre">G</span></code> (de ahí la función <code class="docutils literal notranslate"><span class="pre">GBNP.NondivMons</span></code>). En realidad, mediante el uso de <code class="docutils literal notranslate"><span class="pre">MulQA</span> <span class="pre">(3.5.5)</span></code>, incluso puede multiplicar elementos del álgebra del cociente. En caso de que se desconozca si el álgebra del cociente es finito o infinito, se pueden usar las funciones <code class="docutils literal notranslate"><span class="pre">FinCheckQA</span> <span class="pre">(3.6.2)</span></code> y <code class="docutils literal notranslate"><span class="pre">DetermineGrowthQA</span> <span class="pre">(3.6.1)</span></code>. Cuando el álgebra del cociente es de dimensión infinita, es posible que desee determinar su serie de Hilbert parcial. Esto se puede hacer con la función <code class="docutils literal notranslate"><span class="pre">HilbertSeriesQA</span> <span class="pre">(3.6.3)</span></code>.</p>
+</div>
+<div class="section" id="sobre-la-implementacion">
+<h2><span class="section-number">1.4. </span>Sobre la implementación<a class="headerlink" href="#sobre-la-implementacion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En lugar de almacenar todas las obstrucciones, el algoritmo de base de Gröbner calcula la forma normal (fuerte) de las obstrucciones a partir de <code class="docutils literal notranslate"><span class="pre">G</span></code> y las coloca en <code class="docutils literal notranslate"><span class="pre">D</span></code> siempre que no sean cero. Al comienzo del ciclo, tomamos el primer elemento de la lista <code class="docutils literal notranslate"><span class="pre">D</span></code> y lo preparamos para agregarlo a <code class="docutils literal notranslate"><span class="pre">G</span></code>. Luego nos ocupamos de dos objetivos:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>para restaurar las propiedades invariantes,</p></li>
+<li><p>para limpiar <code class="docutils literal notranslate"><span class="pre">G</span></code> (es decir, reducirlo a un conjunto más breve y breve).</p></li>
+</ol>
+</div></blockquote>
+<p>Esto se hace principalmente mediante cálculos adicionales de polinomio <code class="docutils literal notranslate"><span class="pre">S</span></code> y de forma normal.</p>
+<p>En cuanto a la gestión de datos, hemos optado por trabajar con listas in situ, es decir, no copiar la lista sino realizar todas las operaciones en una y la misma lista. Para ello usamos operaciones como <code class="docutils literal notranslate"><span class="pre">RemoveElmList</span></code> y <code class="docutils literal notranslate"><span class="pre">Add</span></code>, ver <code class="docutils literal notranslate"><span class="pre">Referencia:</span> <span class="pre">Add</span></code>. La idea aquí es economizar espacio para grandes cálculos. No utilizamos operaciones in situ en todas partes, pero nos hemos concentrado en las listas potencialmente más grandes: <code class="docutils literal notranslate"><span class="pre">G</span></code> y <code class="docutils literal notranslate"><span class="pre">D</span></code>.</p>
+<p>Para comprobar si se puede reducir un monomio, se utiliza una estructura de árbol interna.</p>
+</div>
+<div class="section" id="variante-de-rastreo">
+<h2><span class="section-number">1.5. </span>Variante de rastreo<a class="headerlink" href="#variante-de-rastreo" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Al calcular con pequeños ejemplos, puede resultar útil proporcionar a los elementos de la base de Gröbner una forma de expresarlos como elementos en <code class="docutils literal notranslate"><span class="pre">I</span></code>, es decir, como combinaciones de elementos de la entrada. Esto se puede hacer, no solo para elementos de <code class="docutils literal notranslate"><span class="pre">G</span></code>, sino para cualquier elemento, mediante las funciones en el archivo <code class="docutils literal notranslate"><span class="pre">trace.g</span></code>. Este archivo llama al archivo <code class="docutils literal notranslate"><span class="pre">nparith.g</span></code> para realizar un seguimiento aritmético de las expresiones de polinomios como combinaciones de elementos de la base original. Con respecto a una base de entrada dada <code class="docutils literal notranslate"><span class="pre">B</span></code>, un polinomio <code class="docutils literal notranslate"><span class="pre">p</span></code> en la versión trazada es un <code class="docutils literal notranslate"><span class="pre">registro</span></code> o <code class="docutils literal notranslate"><span class="pre">record</span></code>, llamado polinomio trazado, con dos campos. Un campo, denominado <code class="docutils literal notranslate"><span class="pre">p.pol</span></code>, es el polinomio habitual en formato <code class="docutils literal notranslate"><span class="pre">NP</span></code>. El otro, denotado <code class="docutils literal notranslate"><span class="pre">p.trace</span></code>, es una lista de elementos indexados por <code class="docutils literal notranslate"><span class="pre">B</span></code>. Cada elemento de <code class="docutils literal notranslate"><span class="pre">p.trace</span></code> es una lista cuyos elementos son cuatro tuplas <code class="docutils literal notranslate"><span class="pre">[ml,</span> <span class="pre">i,</span> <span class="pre">mr,</span> <span class="pre">c]</span></code> donde <code class="docutils literal notranslate"><span class="pre">ml</span></code> y <code class="docutils literal notranslate"><span class="pre">mr</span></code> son monomios, <code class="docutils literal notranslate"><span class="pre">i</span></code> es un índice de un elemento de <code class="docutils literal notranslate"><span class="pre">B</span></code> y <code class="docutils literal notranslate"><span class="pre">c</span></code> es un escalar. La interpretación de esta estructura de datos es que <code class="docutils literal notranslate"><span class="pre">p.pol</span></code> se puede escribir como la suma de las cuatro tuplas <code class="docutils literal notranslate"><span class="pre">[ml,</span> <span class="pre">i,</span> <span class="pre">mr,</span> <span class="pre">c]</span></code> de <span class="math notranslate nohighlight">\(c \ast ml \ast B_{i} \ast mr\)</span>. Las funciones para imprimir estas expresiones de una manera comprensible para los humanos se describen en la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">3.7</span></code>.</p>
+</div>
+<div class="section" id="variante-de-truncamiento">
+<h2><span class="section-number">1.6. </span>Variante de truncamiento<a class="headerlink" href="#variante-de-truncamiento" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para cálculos con ejemplos grandes y/o infinitos, puede ser conveniente truncar todo por encima de cierto grado. De hecho, nos encontramos con varios ejemplos en los que los polinomios son (ponderados) homogéneos y entonces tiene mucho sentido truncar los polinomios, es decir, descartar todo lo que supere un cierto grado. Porque entonces la base de Gröbner, si existe, también será homogénea y la parte que consiste en todos sus polinomios de grado menor que un grado dado es igual a la base de Gröbner de la unión de la lista original de polinomios con todos los monomios. de grado <span class="math notranslate nohighlight">\(d + 1\)</span>. Aquí un polinomio <code class="docutils literal notranslate"><span class="pre">NP</span></code> en n variables se llama homogéneo de grado <span class="math notranslate nohighlight">\(d\)</span> con respecto a <span class="math notranslate nohighlight">\(v\)</span>, un vector con enteros no negativos de longitud <span class="math notranslate nohighlight">\(n\)</span>, si, para cada uno de sus monomios <span class="math notranslate nohighlight">\([t_{1}, \dots, t_{k} ]\)</span>, la suma de todos los <span class="math notranslate nohighlight">\(v_{t_{i}}\)</span> es igual a <span class="math notranslate nohighlight">\(d\)</span>. La elección más clásica para <span class="math notranslate nohighlight">\(v\)</span> es el vector todo-uno, en cuyo caso a menudo se habla de homogéneo sin mencionar el vector todo-uno. Si dos polinomios son homogéneos con respecto a <span class="math notranslate nohighlight">\(v\)</span>, entonces también lo son sus <span class="math notranslate nohighlight">\(S-polinomios\)</span>. Si <code class="docutils literal notranslate"><span class="pre">K</span></code> es una lista de polinomios homogéneos con respecto a <span class="math notranslate nohighlight">\(v\)</span>, entonces la forma normal con respecto a <code class="docutils literal notranslate"><span class="pre">K</span></code> de cualquier polinomio homogéneo de grado <span class="math notranslate nohighlight">\(d\)</span> con respecto a <span class="math notranslate nohighlight">\(v\)</span> es de nuevo homogénea de grado <span class="math notranslate nohighlight">\(d\)</span> con respecto a <span class="math notranslate nohighlight">\(v\)</span>. En particular, la base de Gröbner de una lista de polinomios que son homogéneos con respecto a <span class="math notranslate nohighlight">\(v\)</span>, consta de polinomios homogéneos, y los polinomios de entrada que contribuyen a los polinomios en la base de Gröbner de grado como máximo <span class="math notranslate nohighlight">\(d\)</span> tienen grado como máximo <span class="math notranslate nohighlight">\(d\)</span> ellos mismos. Estos hechos permiten el cálculo de la base de Gröbner truncada. Las funciones de esta variante se pueden encontrar en la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">3.8</span></code>.</p>
+</div>
+<div class="section" id="variante-de-modulo">
+<h2><span class="section-number">1.7. </span>Variante de módulo<a class="headerlink" href="#variante-de-modulo" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Suponga que se nos da un conjunto finito <span class="math notranslate nohighlight">\(G\)</span> de polinomios en un álgebra <span class="math notranslate nohighlight">\(A\)</span> libre no conmutativa generada por, digamos <span class="math notranslate nohighlight">\(t\)</span> indeterminados, y un entero positivo <span class="math notranslate nohighlight">\(s\)</span>. Denote por <span class="math notranslate nohighlight">\(I\)</span> el ideal bilateral de <span class="math notranslate nohighlight">\(A\)</span> generado por <span class="math notranslate nohighlight">\(G\)</span>. Podemos trabajar con los módulos <span class="math notranslate nohighlight">\(A / I\)</span> libres derechos <span class="math notranslate nohighlight">\((A / I)^{s}\)</span>. Consulte la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">2.2</span></code> sobre cómo representar vectores de <span class="math notranslate nohighlight">\((A / I)^{s}\)</span> mediante elementos del módulo libre As. Dado un subconjunto <span class="math notranslate nohighlight">\(W\)</span> de <span class="math notranslate nohighlight">\(A^{s}\)</span>, cuyos elementos se denominan relaciones de prefijo, sea <span class="math notranslate nohighlight">\(W_{0}\)</span> el submódulo generado por la imagen de <span class="math notranslate nohighlight">\(W\)</span> en <span class="math notranslate nohighlight">\((A / I)^{s}\)</span>. La función <code class="docutils literal notranslate"><span class="pre">SGrobnerModule</span> <span class="pre">(3.9.1)</span></code> está destinada a determinar el módulo de cociente <span class="math notranslate nohighlight">\((A / I)^{s} / W_{0}\)</span>. Si el algoritmo termina, proporciona una base de Gröbner para <span class="math notranslate nohighlight">\(I\)</span>, así como un conjunto adecuado de generadores para <span class="math notranslate nohighlight">\(W_{0}\)</span>, con propiedades similares a las de Gröbner. Esto implica que <code class="docutils literal notranslate"><span class="pre">StrongNormalFormNPM</span> <span class="pre">(3.9.5)</span></code>, un cálculo de forma normal fuerte, se puede usar para encontrar el representante canónico en <span class="math notranslate nohighlight">\(A^{s} / W_{0}\)</span> de un elemento en <span class="math notranslate nohighlight">\((A / I)^{s} / W_{0}\)</span>. Los detalles teóricos se pueden encontrar en [2]. Si <span class="math notranslate nohighlight">\((A / I)^{s} / W_{0}\)</span> es un espacio vectorial de dimensión finita sobre el campo de coeficientes de <span class="math notranslate nohighlight">\(A\)</span>, entonces se puede encontrar una base usando <code class="docutils literal notranslate"><span class="pre">BaseQM</span> <span class="pre">(3.9.2)</span></code> y su dimensión se puede calcular usando <code class="docutils literal notranslate"><span class="pre">DimQM</span> <span class="pre">(3.9.3)</span></code></p>
+</div>
+<div class="section" id="registros-de-bases-de-grobner">
+<h2><span class="section-number">1.8. </span>Registros de bases de Gröbner<a class="headerlink" href="#registros-de-bases-de-grobner" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>La función <code class="docutils literal notranslate"><span class="pre">SGrobnerModule</span> <span class="pre">(3.9.1)</span></code> calcula una base de Gröbner que consta de algunas relaciones de dos lados en el álgebra y algunas relaciones de prefijo o módulo en el espacio vectorial. Estos se devuelven en un <code class="docutils literal notranslate"><span class="pre">registro</span></code> o <code class="docutils literal notranslate"><span class="pre">record</span></code> <code class="docutils literal notranslate"><span class="pre">GBR</span></code>. Las relaciones bilaterales se pueden encontrar bajo el nombre <code class="docutils literal notranslate"><span class="pre">GBR.ts</span></code> y las relaciones de prefijo bajo el nombre <code class="docutils literal notranslate"><span class="pre">GBR.p</span></code>. También se almacena alguna otra información en este registro.</p>
+<p>Las condiciones de prefijo están en formato <code class="docutils literal notranslate"><span class="pre">NPM</span></code> (ver <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">2.2</span></code>) y las relaciones de dos lados están en formato <code class="docutils literal notranslate"><span class="pre">NP</span></code>.</p>
+</div>
+<div class="section" id="algebras-cocientes">
+<h2><span class="section-number">1.9. </span>Algebras Cocientes<a class="headerlink" href="#algebras-cocientes" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una vez que se calcula una base de Gröbner de una lista <span class="math notranslate nohighlight">\(G\)</span> de polinomios en formato <code class="docutils literal notranslate"><span class="pre">NP</span></code>, que definen elementos de un álgebra libre <span class="math notranslate nohighlight">\(A\)</span>, el álgebra cociente <span class="math notranslate nohighlight">\(QA\)</span> de <span class="math notranslate nohighlight">\(A\)</span> por el ideal bilateral generado por <span class="math notranslate nohighlight">\(G\)</span> (o, que equivale a lo mismo, el Base de Gröbner). Hay varias funciones disponibles para determinar si <span class="math notranslate nohighlight">\(QA\)</span> es de dimensión finita o no.</p>
+<p>Los elementos de <span class="math notranslate nohighlight">\(QA\)</span> están representados por elementos de <span class="math notranslate nohighlight">\(A\)</span>. Dos elementos son iguales si y sólo si sus formas normales fuertes coinciden; consulte <code class="docutils literal notranslate"><span class="pre">StrongNormalFormNP</span> <span class="pre">(3.5.6)</span></code>. La multiplicación está a cargo de <code class="docutils literal notranslate"><span class="pre">MulQA</span> <span class="pre">(3.5.5)</span></code>, que es poco más que la forma normal fuerte del producto de dos polinomios en formato <code class="docutils literal notranslate"><span class="pre">NP</span></code> que representan elementos de <span class="math notranslate nohighlight">\(QA\)</span>.</p>
+<p>Si <span class="math notranslate nohighlight">\(QA\)</span> es de dimensión finita, <code class="docutils literal notranslate"><span class="pre">BaseQA</span> <span class="pre">(3.5.1)</span></code> puede encontrar una base sobre el campo. El tamaño de la base, en otras palabras, la dimensión de <span class="math notranslate nohighlight">\(QA\)</span>, se puede calcular con <code class="docutils literal notranslate"><span class="pre">DimQA</span> <span class="pre">(3.5.2)</span></code>. La multiplicación correcta por un elemento de <span class="math notranslate nohighlight">\(QA\)</span> es una transformación lineal. La matriz de esta transformación lineal con respecto a la base, en caso de que el elemento pertenezca a la base, puede ser calculada por <code class="docutils literal notranslate"><span class="pre">MatrixQA</span> <span class="pre">(3.5.3)</span></code> o, para todos los elementos base, <code class="docutils literal notranslate"><span class="pre">MatricesQA</span> <span class="pre">(3.5.4)</span></code>.</p>
+<p>Se puede construir una lista de términos principales de la base de Gröbner <span class="math notranslate nohighlight">\(G\)</span> con <code class="docutils literal notranslate"><span class="pre">LMonsNP</span> <span class="pre">(3.3.10)</span></code>. La dimensión de <span class="math notranslate nohighlight">\(QA\)</span> solo depende de esta lista y es computacionalmente más fácil trabajar con ella que <span class="math notranslate nohighlight">\(G\)</span>. La mayoría de las funciones diseñadas para analizar la dimensionalidad trabajan con un ideal monomial generado por una fuerte base de Gröbner, lo que en este caso significa que ningún elemento divide a ningún otro elemento.</p>
+<p>La función <code class="docutils literal notranslate"><span class="pre">FinCheckQA</span> <span class="pre">(3.6.2)</span></code> determina si <span class="math notranslate nohighlight">\(QA\)</span> es de dimensión finita o infinita. De manera más general, el crecimiento de <span class="math notranslate nohighlight">\(QA\)</span> se puede determinar mediante la función <code class="docutils literal notranslate"><span class="pre">DetermineGrowthQA</span> <span class="pre">(3.6.1)</span></code>, que devuelve la información de que <span class="math notranslate nohighlight">\(QA\)</span> es de dimensión finita o que <span class="math notranslate nohighlight">\(QA\)</span> tiene un crecimiento polinomial, en cuyo caso da límites para el grado de crecimiento polinomial, o que <span class="math notranslate nohighlight">\(QA\)</span> tiene un crecimiento exponencial.</p>
+<p>Finalmente, con la función <code class="docutils literal notranslate"><span class="pre">HilbertSeriesQA</span> <span class="pre">(3.6.3)</span></code> se pueden calcular los coeficientes de la serie de Hilbert.</p>
+<p>El propósito de las funciones <code class="docutils literal notranslate"><span class="pre">FinCheckQA</span> <span class="pre">(3.6.2)</span></code> y <code class="docutils literal notranslate"><span class="pre">DetermineGrowthQA</span> <span class="pre">(3.6.1)</span></code> están estrechamente relacionados. El primero es más rápido, mientras que el segundo proporciona más información, como se ilustra en la siguiente tabla.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 32%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(\text{ }\)</span></p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">DetermineGrowthQA</span></code></p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">DetermineGrowthQA</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>finito</p></td>
+<td><p>true</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>crecimiento polinomial</p></td>
+<td><p>false</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">d</span></code> o <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">d1,</span> <span class="pre">d2</span> <span class="pre">]</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>crecimiento exponencial</p></td>
+<td><p>false</p></td>
+<td><p>crecimiento exponencial</p></td>
+</tr>
+</tbody>
+</table>
+<p>La función <code class="docutils literal notranslate"><span class="pre">DetermineGrowthQA</span> <span class="pre">(3.6.1)</span></code> puede encontrar el grado exacto de crecimiento polinomial (si está disponible). Si este es el caso, se devuelve ese título. También puede suceder que solo se devuelva un intervalo <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">d1,</span> <span class="pre">d2</span> <span class="pre">]</span></code> en el que se encuentra la dimensión. Para forzar una respuesta exacta, su tercer argumento debería ser <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<p>Con la función <code class="docutils literal notranslate"><span class="pre">PreprocessAnalysisQA</span> <span class="pre">(3.6.4)</span></code>, los cálculos realizados por estas <span class="math notranslate nohighlight">\(3\)</span> funciones pueden acelerarse. Sin embargo, tenga en cuenta que al aplicar el preprocesamiento de los datos, el conjunto de monomios en la base ideal cambia y ya no corresponde al mismo álgebra de cociente (sino a un álgebra de cociente con el mismo crecimiento).</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="03-funciones.html" class="btn btn-neutral float-right" title="2. Funciones" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="Notas sobre la documentación del paquete GBNP!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Derechos de autor 2021, Ferreira, Juan David.
+
+    </p>
+  </div>
+    
+    
+    
+    Construido con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXXXX-1', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>
