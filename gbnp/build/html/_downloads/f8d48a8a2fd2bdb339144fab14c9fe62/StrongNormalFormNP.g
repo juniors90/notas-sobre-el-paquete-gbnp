@@ -1,5 +1,5 @@
 # Ejemplo-StrongNormalFormNP
-# Considere los siguientes dos polinomios en formato NP.
+# Consideramos los siguientes dos polinomios en formato NP.
 p1 := [ [ [ 1, 1, 2 ], [ ] ], [ 1, -1 ] ];;
 p2 := [ [ [ 1, 2, 2 ], [ ] ], [ 1, -1 ] ];;
 # La forma normal fuerte del polinomio
