@@ -11,7 +11,13 @@ Notas sobre la documentación del paquete GBNP!
    :numbered:
    :caption: Contenidos:
 
-   GBNP/0-1-introduction
-   GBNP/0-2-description
-   GBNP/0-3-funciones
-   GBNP/0-4-nivel-de-informacion
+   GBNP/1-introduction
+   GBNP/2-description
+   GBNP/3-funciones
+   GBNP/4-nivel-de-informacion
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Apéndice:
+
+   GBNP/ejemplos

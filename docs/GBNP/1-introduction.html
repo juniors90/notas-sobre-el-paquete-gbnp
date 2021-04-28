@@ -41,7 +41,7 @@
     
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Búsqueda" href="../search.html" />
-    <link rel="next" title="2. Descripción" href="0-2-description.html" />
+    <link rel="next" title="2. Descripción" href="2-description.html" />
     <link rel="prev" title="Notas sobre la documentación del paquete GBNP!" href="../index.html" /> 
 </head>
 
@@ -94,9 +94,13 @@
 <li class="toctree-l2"><a class="reference internal" href="#usos-del-paquete">1.2. Usos del paquete</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="0-2-description.html">2. Descripción</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0-3-funciones.html">3. Funciones</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0-4-nivel-de-informacion.html">4. Nivel de información</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-description.html">2. Descripción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-funciones.html">3. Funciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4-nivel-de-informacion.html">4. Nivel de información</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Apéndice:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ejemplos.html">Ejemplos</a></li>
 </ul>
 
             
@@ -151,7 +155,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/GBNP/0-1-introduction.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+            <a href="../_sources/GBNP/1-introduction.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
           
         
       </li>
@@ -177,7 +181,7 @@
 </div>
 <div class="section" id="usos-del-paquete">
 <h2><span class="section-number">1.2. </span>Usos del paquete<a class="headerlink" href="#usos-del-paquete" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Si deseamos calcular una <em>base de Gröbner</em>, creamos una lista de <code class="docutils literal notranslate"><span class="pre">NP</span></code> (polinomios no conmutativos en formato <code class="docutils literal notranslate"><span class="pre">NP</span></code>), como se describe en la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">2.1</span></code>. Esto se puede hacer directamente o mediante el uso de las funciones de transición descritas en la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">3.1</span></code>. Para ejecutar el algoritmo estándar, use las funciones de la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">3.4</span></code>. Con estas funciones, podemos intentar encontrar una <strong>base de Gröbner</strong>. La palabra <code class="docutils literal notranslate"><span class="pre">try</span></code> se incluye porque <span class="underline">no se garantiza que el algoritmo para calcular las bases de Gröbner termine</span>. Los problemas de impresión de polinomios en formato <code class="docutils literal notranslate"><span class="pre">NP</span></code> se analizan en la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">3.2</span></code>. Si se encuentra la <strong>base de Gröbner</strong> y la dimensión del álgebra del cociente <span class="math notranslate nohighlight">\(Q\)</span> (consulte la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">2.9</span></code>) es finita, puede encontrar una base de monomios para <span class="math notranslate nohighlight">\(Q\)</span> con las funciones de la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">3.5</span></code>. Para un análisis más avanzado de <span class="math notranslate nohighlight">\(Q\)</span>, como una prueba de dimensionalidad finita o infinita, o para determinar su crecimiento o su serie parcial de Hilbert, use las funciones de la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">3.6</span></code>.</p>
+<p>Si deseamos calcular una <em>base de Gröbner</em>, creamos una lista de <code class="docutils literal notranslate"><span class="pre">NP</span></code> (polinomios no conmutativos en formato <code class="docutils literal notranslate"><span class="pre">NP</span></code>), como se describe en la Sección <a class="reference internal" href="2-description.html#polinomios-no-conmutativos-nps"><span class="std std-ref">Polinomios no conmutativos (NPs)</span></a>. Esto se puede hacer directamente o mediante el uso de las funciones de transición descritas en la Sección <a class="reference internal" href="3-funciones.html#conversion-de-polinomios-a-diferentes-formatos"><span class="std std-ref">Conversión de polinomios a diferentes formatos</span></a>. Para ejecutar el algoritmo estándar, use las funciones de la Sección <a class="reference internal" href="3-funciones.html#funciones-grobner-variante-estandar"><span class="std std-ref">Funciones Gröbner, variante estándar</span></a>. Con estas funciones, podemos intentar encontrar una <strong>base de Gröbner</strong>. La palabra <code class="docutils literal notranslate"><span class="pre">try</span></code> se incluye porque <span class="underline">no se garantiza que el algoritmo para calcular las bases de Gröbner termine</span>. Los problemas de impresión de polinomios en formato <code class="docutils literal notranslate"><span class="pre">NP</span></code> se analizan en la Sección <a class="reference internal" href="3-funciones.html#imprimiendo-polinomios-en-formato-np"><span class="std std-ref">Imprimiendo Polinomios en formato NP</span></a>. Si se encuentra la <strong>base de Gröbner</strong> y la dimensión del álgebra del cociente <span class="math notranslate nohighlight">\(Q\)</span> (consulte la Sección <a class="reference internal" href="2-description.html#algebras-cocientes"><span class="std std-ref">Álgebras Cocientes</span></a>) es finita, puede encontrar una base de monomios para <span class="math notranslate nohighlight">\(Q\)</span> con las funciones de la Sección <a class="reference internal" href="3-funciones.html#algebras-de-cocientes-de-dimension-finita"><span class="std std-ref">Álgebras de cocientes de dimensión finita</span></a>. Para un análisis más avanzado de <span class="math notranslate nohighlight">\(Q\)</span>, como una prueba de dimensionalidad finita o infinita, o para determinar su crecimiento o su serie parcial de Hilbert, use las funciones de la Sección <a class="reference internal" href="3-funciones.html#finitud-y-series-de-hilbert"><span class="std std-ref">Finitud y series de Hilbert</span></a>.</p>
 <dl class="simple">
 <dt>Hay tres variantes del algoritmo básico de <em>Gröbner</em>:</dt><dd><ul class="simple">
 <li><p>la versión truncada,</p></li>
@@ -186,9 +190,9 @@
 </ul>
 </dd>
 </dl>
-<p>En <span class="underline">el caso homogéneo</span> (ponderado) (descrito en la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">2.6</span></code>), la versión truncada, dada por las funciones descritas en la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">3.8</span></code>, calcula la parte de una base de Gröbner hasta un peso indicado.</p>
-<p><span class="underline">La versión de traza</span> (descrita en la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">2.5</span></code>), dada por las funciones descritas en la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">3.7</span></code>, calcula una expresión de los polinomios de la base de Gröbner encontrados en términos de los generadores originales.</p>
-<p><span class="underline">La versión del módulo</span> (descrita en las <code class="docutils literal notranslate"><span class="pre">Secciones</span> <span class="pre">2.2</span></code>, <code class="docutils literal notranslate"><span class="pre">2.7</span></code> y <code class="docutils literal notranslate"><span class="pre">2.8</span></code>), dada por las funciones descritas en la <code class="docutils literal notranslate"><span class="pre">Sección</span> <span class="pre">3.9</span></code>, calcula una <strong>base de Gröbner</strong> para un submódulo de un módulo <span class="math notranslate nohighlight">\(Q\)</span> libre de rango finito.</p>
+<p>En <span class="underline">el caso homogéneo</span> (ponderado) (descrito en la Sección <a class="reference internal" href="2-description.html#variante-de-truncamiento"><span class="std std-ref">Variante de truncamiento</span></a>), la versión truncada, dada por las funciones descritas en la Sección <span class="xref std std-ref">Funciones de la variante truncada</span>, calcula la parte de una base de Gröbner hasta un peso indicado.</p>
+<p><span class="underline">La versión de traza</span> (descrita en la Sección <a class="reference internal" href="2-description.html#variante-de-rastreo"><span class="std std-ref">Variante de rastreo</span></a>), dada por las funciones descritas en la Sección <a class="reference internal" href="3-funciones.html#funciones-de-la-variante-de-seguimiento"><span class="std std-ref">Funciones de la variante de seguimiento</span></a>, calcula una expresión de los polinomios de la base de Gröbner encontrados en términos de los generadores originales.</p>
+<p><span class="underline">La versión del módulo</span> (descrita en las Secciones <a class="reference internal" href="2-description.html#polynomios-no-conmutativos-para-modulos-npms"><span class="std std-ref">Polynomios No Conmutativos para Modulos (NPMs)</span></a>, <a class="reference internal" href="2-description.html#variante-de-modulo"><span class="std std-ref">Variante de módulo</span></a> y <a class="reference internal" href="2-description.html#registros-de-bases-de-grobner"><span class="std std-ref">Registros de bases de Gröbner</span></a>), dada por las funciones descritas en la Sección <span class="xref std std-ref">funciones-de-la-variante-del-módulo</span>, calcula una <strong>base de Gröbner</strong> para un submódulo de un módulo <span class="math notranslate nohighlight">\(Q\)</span> libre de rango finito.</p>
 <p>Pemos ver los archivos de ejemplo en el <code class="docutils literal notranslate"><span class="pre">Capítulo</span> <span class="pre">A</span></code> para inspirarnos. El código fuente de los archivos se puede examinar para funciones auxiliares, que a menudo se utilizan en las funciones principales, pero no se consideran necesarias para un usuario nuevo.</p>
 </div>
 </div>
@@ -199,7 +203,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="0-2-description.html" class="btn btn-neutral float-right" title="2. Descripción" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="2-description.html" class="btn btn-neutral float-right" title="2. Descripción" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="../index.html" class="btn btn-neutral float-left" title="Notas sobre la documentación del paquete GBNP!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
     </div>
 

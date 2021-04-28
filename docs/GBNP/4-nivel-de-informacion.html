@@ -40,7 +40,8 @@
     
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Búsqueda" href="../search.html" />
-    <link rel="prev" title="3. Funciones" href="0-3-funciones.html" /> 
+    <link rel="next" title="Ejemplos" href="ejemplos.html" />
+    <link rel="prev" title="3. Funciones" href="3-funciones.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -87,27 +88,31 @@
             
               <p class="caption"><span class="caption-text">Contenidos:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="0-1-introduction.html">1. Introducción</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0-2-description.html">2. Descripción</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0-3-funciones.html">3. Funciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1-introduction.html">1. Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2-description.html">2. Descripción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-funciones.html">3. Funciones</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">4. Nivel de información</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introduction">4.1. Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#infogbnp">4.2. InfoGBNP</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">4.2.1. InfoGBNP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#introduccion">4.1. Introducción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#acerca-de-infogbnp">4.2. Acerca de InfoGBNP</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#infogbnp">4.2.1. InfoGBNP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#que-se-imprimira-a-nivel-0">4.2.2. Qué se imprimirá a nivel <code class="docutils literal notranslate"><span class="pre">0</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#que-se-imprimira-a-nivel-1">4.2.3. Qué se imprimirá a nivel <code class="docutils literal notranslate"><span class="pre">1</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#que-se-imprimira-a-nivel-2">4.2.4. Qué se imprimirá a nivel <code class="docutils literal notranslate"><span class="pre">2</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#infogbnptime">4.3. InfoGBNPTime</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id3">4.3.1. InfoGBNPTime</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">4.3.2. Qué se imprimirá a nivel <code class="docutils literal notranslate"><span class="pre">0</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">4.3.3. Qué se imprimirá a nivel <code class="docutils literal notranslate"><span class="pre">1</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id7">4.3.4. Qué se imprimirá a nivel <code class="docutils literal notranslate"><span class="pre">2</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#acerca-de-infogbnptime">4.3. Acerca de InfoGBNPTime</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#infogbnptime">4.3.1. InfoGBNPTime</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">4.3.2. Qué se imprimirá a nivel <code class="docutils literal notranslate"><span class="pre">0</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">4.3.3. Qué se imprimirá a nivel <code class="docutils literal notranslate"><span class="pre">1</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">4.3.4. Qué se imprimirá a nivel <code class="docutils literal notranslate"><span class="pre">2</span></code></a></li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+<p class="caption"><span class="caption-text">Apéndice:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ejemplos.html">Ejemplos</a></li>
 </ul>
 
             
@@ -162,7 +167,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/GBNP/0-4-nivel-de-informacion.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+            <a href="../_sources/GBNP/4-nivel-de-informacion.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
           
         
       </li>
@@ -177,29 +182,29 @@
             
   <div class="section" id="nivel-de-informacion">
 <h1><span class="section-number">4. </span>Nivel de información<a class="headerlink" href="#nivel-de-informacion" title="Enlazar permanentemente con este título">¶</a></h1>
-<div class="section" id="introduction">
-<h2><span class="section-number">4.1. </span>Introduction<a class="headerlink" href="#introduction" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="introduccion">
+<h2><span class="section-number">4.1. </span>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Muchas funciones del paquete <code class="docutils literal notranslate"><span class="pre">GBNP</span></code> pueden producir resultados adicionales. Este resultado puede ser útil para cálculos largos, para ver dónde está el cálculo o para obtener más información sobre el cálculo en sí.</p>
-<p><strong>GAP</strong> proporciona las herramientas para poder ajustar la salida de las funciones. Todas las funciones de este paquete usan <code class="docutils literal notranslate"><span class="pre">InfoClass</span></code> <code class="docutils literal notranslate"><span class="pre">InfoGBNP</span> <span class="pre">(4.2.1)</span></code> y algunas usan <code class="docutils literal notranslate"><span class="pre">InfoClass</span></code> <code class="docutils literal notranslate"><span class="pre">InfoGBNPTime</span> <span class="pre">(4.3.1)</span></code>.</p>
+<p><strong>GAP</strong> proporciona las herramientas para poder ajustar la salida de las funciones. Todas las funciones de este paquete usan <code class="docutils literal notranslate"><span class="pre">InfoClass</span></code> <a class="reference internal" href="#seccion-infogbnp"><span class="std std-ref">InfoGBNP</span></a> y algunas usan <code class="docutils literal notranslate"><span class="pre">InfoClass</span></code> <a class="reference internal" href="#seccion-infogbnptime"><span class="std std-ref">InfoGBNPTime</span></a>.</p>
 <p>Como es habitual con <strong>GAP</strong> cuando se deja en <code class="docutils literal notranslate"><span class="pre">0</span></code>, las funciones difícilmente imprimirán información adicional. Se puede establecer en <code class="docutils literal notranslate"><span class="pre">1</span></code> o <code class="docutils literal notranslate"><span class="pre">2</span></code> con <code class="docutils literal notranslate"><span class="pre">SetInfoLevel</span></code> (se puede encontrar más información sobre esta función en <code class="docutils literal notranslate"><span class="pre">Reference:</span> <span class="pre">SetInfoLevel</span></code>). En las siguientes secciones se ofrecerá una breve explicación sobre cada nivel de información.</p>
 </div>
+<div class="section" id="acerca-de-infogbnp">
+<h2><span class="section-number">4.2. </span>Acerca de InfoGBNP<a class="headerlink" href="#acerca-de-infogbnp" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="infogbnp">
-<h2><span class="section-number">4.2. </span>InfoGBNP<a class="headerlink" href="#infogbnp" title="Enlazar permanentemente con este título">¶</a></h2>
-<div class="section" id="id1">
-<h3><span class="section-number">4.2.1. </span>InfoGBNP<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>La clase de infromación (info class) <code class="docutils literal notranslate"><span class="pre">InfoGBNP</span></code>.
-The InfoClass for this package is used in almost all functions. To change this level to 1 (some information) or 2 (more information, also information from calculation loops) use the function SetInfoLevel.</p>
+<span id="seccion-infogbnp"></span><h3><span class="section-number">4.2.1. </span>InfoGBNP<a class="headerlink" href="#infogbnp" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La clase de infromación (info class) <code class="docutils literal notranslate"><span class="pre">InfoGBNP</span></code>.</p>
+<p>La InfoClass de este paquete se utiliza en casi todas las funciones. Para cambiar este nivel a 1 (alguna información) o 2 (más información, también información de los bucles de cálculo) utilice la función SetInfoLevel.</p>
 </div>
 <div class="section" id="que-se-imprimira-a-nivel-0">
 <h3><span class="section-number">4.2.2. </span>Qué se imprimirá a nivel <code class="docutils literal notranslate"><span class="pre">0</span></code><a class="headerlink" href="#que-se-imprimira-a-nivel-0" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>En el nivel <code class="docutils literal notranslate"><span class="pre">0</span></code> no se imprime información más allá de lo que las funciones mismas ordenan imprimir.</p>
-<p>Estas incluyen funciones como <code class="docutils literal notranslate"><span class="pre">PrintNP</span> <span class="pre">(3.2.1)</span></code>, <code class="docutils literal notranslate"><span class="pre">PrintNPList</span> <span class="pre">(3.2.3)</span></code>, <code class="docutils literal notranslate"><span class="pre">PrintTraceList</span> <span class="pre">(3.7.2)</span></code> y <code class="docutils literal notranslate"><span class="pre">PrintNPListTrace</span> <span class="pre">(3.7.4)</span></code>, pero también incluye la función <code class="docutils literal notranslate"><span class="pre">DetermineGrowthQA</span> <span class="pre">(3.6.1)</span></code>, que solo imprime una o dos líneas y <code class="docutils literal notranslate"><span class="pre">DimsQATrunc</span> <span class="pre">(3.8.5)</span></code> que produce información sobre una base Gröbner truncada.</p>
+<p>Estas incluyen funciones como <a class="reference internal" href="3-funciones.html#printnp"><span class="std std-ref">PrintNP</span></a>, <a class="reference internal" href="3-funciones.html#printnplist"><span class="std std-ref">PrintNPList</span></a>, <a class="reference internal" href="3-funciones.html#printtracelist"><span class="std std-ref">PrintTraceList</span></a> y <a class="reference internal" href="3-funciones.html#printnplisttrace"><span class="std std-ref">PrintNPListTrace</span></a>, pero también incluye la función <a class="reference internal" href="3-funciones.html#determinegrowthqa"><span class="std std-ref">DetermineGrowthQA</span></a>, que solo imprime una o dos líneas y <a class="reference internal" href="3-funciones.html#dimsqatrunc"><span class="std std-ref">DimsQATrunc</span></a> que produce información sobre una base Gröbner truncada.</p>
 </div>
 <div class="section" id="que-se-imprimira-a-nivel-1">
 <h3><span class="section-number">4.2.3. </span>Qué se imprimirá a nivel <code class="docutils literal notranslate"><span class="pre">1</span></code><a class="headerlink" href="#que-se-imprimira-a-nivel-1" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>El infolevel se puede establecer en <code class="docutils literal notranslate"><span class="pre">1</span></code> con el siguiente comando:</p>
-<div class="literal-block-wrapper docutils container" id="id2">
-<div class="code-block-caption"><span class="caption-text">InfoGBNP</span><a class="headerlink" href="#id2" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">InfoGBNP</span><a class="headerlink" href="#id1" title="Enlace permanente a este código fuente">¶</a></div>
 <div class="highlight-gap notranslate"><div class="highlight"><pre><span></span><span class="nv">gap</span><span class="o">&gt;</span> <span class="nv">SetInfoLevel</span><span class="p">(</span><span class="nv">InfoGBNP</span><span class="o">,</span><span class="nv">1</span><span class="p">)</span><span class="o">;</span>
 </pre></div>
 </div>
@@ -218,31 +223,31 @@ The InfoClass for this package is used in almost all functions. To change this l
 <p>En el nivel <code class="docutils literal notranslate"><span class="pre">2</span></code>, un gran conjunto de funciones producirá una gran cantidad de resultados. Esto se refiere principalmente a información sobre bucles en los cálculos. También se imprimirá la información de tiempo.</p>
 </div>
 </div>
+<div class="section" id="acerca-de-infogbnptime">
+<h2><span class="section-number">4.3. </span>Acerca de InfoGBNPTime<a class="headerlink" href="#acerca-de-infogbnptime" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="infogbnptime">
-<h2><span class="section-number">4.3. </span>InfoGBNPTime<a class="headerlink" href="#infogbnptime" title="Enlazar permanentemente con este título">¶</a></h2>
-<div class="section" id="id3">
-<h3><span class="section-number">4.3.1. </span>InfoGBNPTime<a class="headerlink" href="#id3" title="Enlazar permanentemente con este título">¶</a></h3>
+<span id="seccion-infogbnptime"></span><h3><span class="section-number">4.3.1. </span>InfoGBNPTime<a class="headerlink" href="#infogbnptime" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>La clase de infromación (info class) <code class="docutils literal notranslate"><span class="pre">InfoGBNPTime</span></code>.</p>
 <p>La InfoClass para cronometraje se utiliza para producir información sobre el tiempo de ejecución del algoritmo en ciertos cálculos posiblemente largos.</p>
 <p>Para cambiar este nivel a <code class="docutils literal notranslate"><span class="pre">1</span></code> (las funciones de Gröbner dan información) o <code class="docutils literal notranslate"><span class="pre">2</span></code> (más información, también información de otras funciones, que no siempre pueden llevar mucho tiempo y desde bucles internos) utilice la función <code class="docutils literal notranslate"><span class="pre">SetInfoLevel</span></code>.</p>
 </div>
-<div class="section" id="id4">
-<h3><span class="section-number">4.3.2. </span>Qué se imprimirá a nivel <code class="docutils literal notranslate"><span class="pre">0</span></code><a class="headerlink" href="#id4" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="id2">
+<h3><span class="section-number">4.3.2. </span>Qué se imprimirá a nivel <code class="docutils literal notranslate"><span class="pre">0</span></code><a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>No se imprimirá información de tiempo en el nivel <code class="docutils literal notranslate"><span class="pre">0</span></code>. Esto puede ser deseable para pequeños ejemplos o cuando se produce una salida de prueba, para usar con <code class="docutils literal notranslate"><span class="pre">ReadTest</span></code>.</p>
 </div>
-<div class="section" id="id5">
-<h3><span class="section-number">4.3.3. </span>Qué se imprimirá a nivel <code class="docutils literal notranslate"><span class="pre">1</span></code><a class="headerlink" href="#id5" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="id3">
+<h3><span class="section-number">4.3.3. </span>Qué se imprimirá a nivel <code class="docutils literal notranslate"><span class="pre">1</span></code><a class="headerlink" href="#id3" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>El infolevel se puede establecer en <code class="docutils literal notranslate"><span class="pre">1</span></code> con el siguiente comando:</p>
-<div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-text">InfoGBNPTime</span><a class="headerlink" href="#id6" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">InfoGBNPTime</span><a class="headerlink" href="#id4" title="Enlace permanente a este código fuente">¶</a></div>
 <div class="highlight-gap notranslate"><div class="highlight"><pre><span></span><span class="nv">gap</span><span class="o">&gt;</span> <span class="nv">SetInfoLevel</span><span class="p">(</span><span class="nv">InfoGBNPTime</span><span class="o">,</span><span class="nv">1</span><span class="p">)</span><span class="o">;</span>
 </pre></div>
 </div>
 </div>
-<p>En el nivel <code class="docutils literal notranslate"><span class="pre">1</span></code> habrá información de tiempo impresa por las funciones de diferentes variantes del algoritmo de base de Gröbner: <code class="docutils literal notranslate"><span class="pre">Grobner</span> <span class="pre">(3.4.1)</span></code>, <code class="docutils literal notranslate"><span class="pre">SGrobner</span> <span class="pre">(3.4.2)</span></code>, <code class="docutils literal notranslate"><span class="pre">SGrobnerTrace</span> <span class="pre">(3.7.5)</span></code> y <code class="docutils literal notranslate"><span class="pre">SGrobnerTrunc</span> <span class="pre">(3.8.2)</span></code>.</p>
+<p>En el nivel <code class="docutils literal notranslate"><span class="pre">1</span></code> habrá información de tiempo impresa por las funciones de diferentes variantes del algoritmo de base de Gröbner: <a class="reference internal" href="3-funciones.html#grobner"><span class="std std-ref">Grobner</span></a>, <a class="reference internal" href="3-funciones.html#sgrobner"><span class="std std-ref">SGrobner</span></a>, <a class="reference internal" href="3-funciones.html#sgrobnertrace"><span class="std std-ref">SGrobnerTrace</span></a> y <a class="reference internal" href="3-funciones.html#sgrobnertrunc"><span class="std std-ref">SGrobnerTrunc</span></a>.</p>
 </div>
-<div class="section" id="id7">
-<h3><span class="section-number">4.3.4. </span>Qué se imprimirá a nivel <code class="docutils literal notranslate"><span class="pre">2</span></code><a class="headerlink" href="#id7" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="id5">
+<h3><span class="section-number">4.3.4. </span>Qué se imprimirá a nivel <code class="docutils literal notranslate"><span class="pre">2</span></code><a class="headerlink" href="#id5" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>El infolevel se puede establecer en <code class="docutils literal notranslate"><span class="pre">2</span></code> con el siguiente comando:</p>
 <div class="literal-block-wrapper docutils container" id="infogbnptime-2">
 <div class="code-block-caption"><span class="caption-text">InfoGBNPTime</span><a class="headerlink" href="#infogbnptime-2" title="Enlace permanente a este código fuente">¶</a></div>
@@ -250,7 +255,7 @@ The InfoClass for this package is used in almost all functions. To change this l
 </pre></div>
 </div>
 </div>
-<p>En el nivel dos también habrá información impresa desde un bucle desde dentro de <code class="docutils literal notranslate"><span class="pre">SGrobnerTrunc</span> <span class="pre">(3.8.2)</span></code>.</p>
+<p>En el nivel dos también habrá información impresa desde un bucle desde dentro de <a class="reference internal" href="3-funciones.html#sgrobnertrunc"><span class="std std-ref">SGrobnerTrunc</span></a>.</p>
 </div>
 </div>
 </div>
@@ -261,7 +266,8 @@ The InfoClass for this package is used in almost all functions. To change this l
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="0-3-funciones.html" class="btn btn-neutral float-left" title="3. Funciones" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="ejemplos.html" class="btn btn-neutral float-right" title="Ejemplos" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="3-funciones.html" class="btn btn-neutral float-left" title="3. Funciones" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
     </div>
 
   <hr/>
